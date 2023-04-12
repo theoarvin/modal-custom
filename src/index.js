@@ -1,2 +1,2 @@
-export { Counter } from "./counter";
+export { default as Modal } from "./Modal";
 

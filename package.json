@@ -1,27 +1,28 @@
 {
-  "name": "my-custom-greeter",
+  "name": "modal-custom-theoab",
   "version": "1.0.2",
-  "description": "A simple component to say hello",
+  "description": "A react component modal custom ",
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pasdagepourcoder/demo-package-components-react.git"
+    "url": "git+https://github.com/theoarvin/modal-custom"
   },
   "keywords": [
     "react",
-    "typescript"
+    "modal",
+    "component"
   ],
   "author": {
     "name": "pasdagepourcoder"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pasdagepourcoder/demo-package-components-react/issues"
+    "url": "https://github.com/theoarvin/modal-custom/issues"
   },
-  "homepage": "https://github.com/pasdagepourcoder/demo-package-components-react#readme",
+  "homepage": "https://github.com/theoarvin/modal-custom#readme",
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
