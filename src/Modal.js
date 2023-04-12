@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-function Modal({  openModal,setOpenModal }) {
+export function Modal({  openModal,setOpenModal }) {
   const modalRef = useRef(null);
 
   const closeModal = () => {
@@ -67,5 +67,3 @@ function Modal({  openModal,setOpenModal }) {
     </div>
   );
 }
-
-export default Modal;

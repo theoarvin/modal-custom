@@ -1,6 +1,6 @@
 {
   "name": "modal-custom-theoab",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A react component modal custom ",
   "main": "index.js",
   "scripts": {

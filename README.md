@@ -13,7 +13,11 @@ npm add typescript-components-by-rupert
 Import the Counter component:
 
 ```js
-import { Counter } from "typescript-components-by-rupert";
+import { Modal } from "modal-custom-theoab";
 ```
 
-You can then render the `Counter` component like any other React component in JSX.
+then you need to call the Modal component with two props <Modal openModal={openModal} setOpenModal={setOpenModal}/> . 
+
+### openModal is a boolean that checks if the modal is open.
+
+### setOpenModal is a function that modifies the value of openModal to close the Modal directly with a close in the component
