@@ -1,8 +1,8 @@
 {
-  "name": "modal-custom-theoab",
-  "version": "1.0.3",
+  "name": "modal-custom-theoarvin",
+  "version": "1.0.0",
   "description": "A react component modal custom ",
-  "main": "index.js",
+  "main": "Modal.js",
   "scripts": {
     "build": "NODE_ENV=production webpack"
   },
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/theoarvin/modal-custom#readme",
   "devDependencies": {
+    "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
     "@babel/preset-react": "^7.18.6",

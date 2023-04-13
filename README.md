@@ -7,7 +7,7 @@ This repository was created as part of a guide to publishing TypeScript React co
 Install this package:
 
 ```shell
-npm add typescript-components-by-rupert
+npm install modal-custom-theoab
 ```
 
 Import the Counter component:

@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 
-export function Modal({  openModal,setOpenModal }) {
+function Modal({  openModal,setOpenModal }) {
   const modalRef = useRef(null);
-
+  
   const closeModal = () => {
     setOpenModal(false)
   };
@@ -60,10 +60,12 @@ export function Modal({  openModal,setOpenModal }) {
             fontSize: "20px",
             cursor: "pointer",
           }}
+          onClick={() => closeModal()}
         >
-          <strong onClick={() => closeModal()}>X</strong>
+          <strong>X</strong>
         </span>
       </div>
     </div>
   );
 }
+export default Modal;
