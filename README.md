@@ -15,8 +15,11 @@ Import the Counter component:
 import { Modal } from "modal-custom-theoab";
 ```
 
-then you need to call the Modal component with two props <Modal openModal={openModal} setOpenModal={setOpenModal}/> . 
+then you need to call the Modal component with two props  . 
 
+```js
+<Modal openModal={openModal} setOpenModal={setOpenModal}/>
+```
 
 - openModal is a boolean that checks if the modal is open.
 
