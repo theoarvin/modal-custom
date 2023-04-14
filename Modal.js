@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 
-function Modal({  openModal,setOpenModal }) {
+function Modal({  openModal, setOpenModal }) {
   const modalRef = useRef(null);
-  
+
   const closeModal = () => {
     setOpenModal(false)
   };
@@ -24,6 +24,7 @@ function Modal({  openModal,setOpenModal }) {
         zIndex: 1,
       }}
       className="modal"
+      
     >
       <div
         className="modal-text"
@@ -42,7 +43,7 @@ function Modal({  openModal,setOpenModal }) {
           transform: "translate(-50%)",
         }}
       >
-        <p>Employee Created!</p>
+        <p data-testid="modal-text">Employee Created!</p>
         <span
           className="modal-btn-close"
           style={{
@@ -60,12 +61,12 @@ function Modal({  openModal,setOpenModal }) {
             fontSize: "20px",
             cursor: "pointer",
           }}
-          onClick={() => closeModal()}
         >
-          <strong>X</strong>
+          <strong onClick={() => closeModal()}>X</strong>
         </span>
       </div>
     </div>
   );
 }
+
 export default Modal;

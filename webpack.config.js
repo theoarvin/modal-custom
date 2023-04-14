@@ -1,23 +1,45 @@
-const path = require('path');
-
 module.exports = {
-  entry: './src/Modal.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  },
+  mode: 'production',
+  entry: [
+      './index.js'
+  ],
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
+      rules: [
+          {
+              test: /\.(js|jsx)$/,
+              exclude: /node_modules/,
+              use: ['babel-loader']
+          },
+          {
+              test: /(\.css$)/,
+              use: ['style-loader', 'css-loader']
           }
-        }
+      ]
+  },
+  externals: {
+      react: {
+          root: 'React',
+          commonjs2: 'react',
+          commonjs: 'react',
+          amd: 'react'
+      },
+      'react-dom': {
+          root: 'ReactDOM',
+          commonjs2: 'react-dom',
+          commonjs: 'react-dom',
+          amd: 'react-dom'
       }
-    ]
+  },
+  resolve: {
+      extensions: ['*', '.js', '.jsx']
+  },
+  output: {
+      path: __dirname + '/dist',
+      publicPath: '/',
+      filename: 'index.js',
+      libraryTarget: 'commonjs2'
+  },
+  devServer: {
+      contentBase: './dist'
   }
 };
