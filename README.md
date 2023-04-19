@@ -6,13 +6,13 @@
 Install this package:
 
 ```shell
-npm install modal-custom-theoab
+npm install modal-theoab
 ```
 
 Import the Counter component:
 
 ```js
-import { Modal } from "modal-custom-theoab";
+import { Modal } from "modal-theoab";
 ```
 
 then you need to call the Modal component with two props  . 

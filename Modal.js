@@ -14,12 +14,12 @@ function Modal({  openModal, setOpenModal }) {
     <div
       ref={modalRef}
       style={{
-        position: "absolute",
+        position: "fixed",
         display: "flex",
         top: 0,
         bottom: 0,
         width: "100%",
-        height: "100vh",
+        height: "100%",
         backgroundColor: "RGBA(0,0,0,0.71)",
         zIndex: 1,
       }}
@@ -70,3 +70,4 @@ function Modal({  openModal, setOpenModal }) {
 }
 
 export default Modal;
+
