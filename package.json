@@ -1,6 +1,6 @@
 {
   "name": "modal-theoab",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Modal component",
   "main": "./dist/index",
   "typings": "./dist/index",
